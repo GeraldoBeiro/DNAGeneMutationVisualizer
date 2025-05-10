@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta author="Geraldo Beiró Neto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>This program retrieves gene mutation data from dbSNP via the National Library of Medicine’s API.</h1>
+    <img src="images/NLM.JPG" alt="National Library of Medicine logo">
+
+    <div class="flex-container">
+        <fieldset>
+            <legend>Gene Search</legend>
+    
+            <label for="gene-input">Enter gene name or symbol (e.g. TP53):</label>
+            <input type="text" id="gene-input" placeholder="Enter gene symbol here...">
+    
+            <label for="dna-sequence">Paste or type DNA sequence:</label>
+            <textarea id="dna-sequence" rows="5" placeholder="ATGCGTACG..."></textarea>
+    
+            <button id="analyze-button">Analyze Mutations</button>
+            <button id="art-button">Generate DNA Art</button>
+        </fieldset>
+
+        <canvas id="dna-canvas" width="300" height="300" style="margin-top:20px; border:1px solid #ccc;"></canvas>
+
+    
+        <div id="results">
+            <h3>Mutations Found:</h3>
+            <!-- Here is where I will display the mutation table -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script><br>
+    <footer>
+        <small>
+          Created by Geraldo Beiró Neto – Computer Programming Student || Aspiring Computational Biologist.
+          <a href="https://www.linkedin.com/in/geraldobeiro" target="_blank">LinkedIn</a>
+        </small>
+      </footer>
+      
+</body>
+
+</html>
